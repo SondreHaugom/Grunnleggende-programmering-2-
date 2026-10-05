@@ -33,9 +33,14 @@ def er_primtall(n: int) -> bool:
 
 
 def sorter(tall: list[int]) -> list[int]:
-    min = tall[0]
-    for t in tall:
-        if t < min:
-            min = t
-        tall.append(min)
-        tall.remove(min)
+    usortert = tall.copy()
+    sortert = []
+
+    while usortert:
+        minste = usortert[0]
+        for t in usortert:
+            if t < minste:
+                minste = t
+        sortert.append(minste)
+        usortert.remove(minste)
+    return sortert
