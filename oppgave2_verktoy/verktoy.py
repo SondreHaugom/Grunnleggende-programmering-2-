@@ -9,3 +9,11 @@ def finn_minste_storste(tall: list[int]) -> tuple[int, int]:
     return minste, storste
 
 
+
+def reverser(tekst: str) -> str:
+    resultat = ""
+    for i in range(len(tekst) - 1, -1, -1):
+        resultat = resultat + tekst[i]
+    return resultat
+
+
