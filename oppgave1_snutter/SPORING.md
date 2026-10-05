@@ -39,3 +39,25 @@ feil igjene
  
 
 
+Runde 	Variabeler	Besrkivelse	Print	Utskrift
+3	a = [1, 2, 3]
+	en array med tall verdier
+	Print(a)
+[1,2,3,4]	[1, 2, 3, 4]
+[1, 2, 3, 4]
+[1, 2, 3, 4, 5]
+	b = a 
+	gir variabelen b veriden i a 
+	Print(b)
+[1,2,3,4]	
+	b.append(4)
+	dette legger på enda et tall i array-en, da vil den se slik ut: [1,2,3,4]
+		
+	 c = a[:]
+	Dette lager en kopi 
+		
+	c.append(5)
+	Legger til en ny verdi i listen: [1,2,3,4,5]
+	Print(c)
+[1,2,3,4, 5]	
+
