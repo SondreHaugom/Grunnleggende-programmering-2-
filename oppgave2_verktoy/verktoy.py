@@ -17,3 +17,14 @@ def reverser(tekst: str) -> str:
     return resultat
 
 
+def er_primtall(n: int) -> bool:
+    if n <= 1:
+        return False
+    else:
+        prime = True
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            prime = False
+            break
+    return prime
+
