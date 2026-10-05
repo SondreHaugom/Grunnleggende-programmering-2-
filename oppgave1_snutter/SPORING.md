@@ -15,3 +15,27 @@ Også kommer if skjekken som sier når runden er kommet til 6 så skal total = t
 Her fikk feil.
 
 
+2	Første variabel er: tekst = «banan»
+Andre variabel er: resultat = «» tom streng
+Neste er i = len(tekst) – 1
+Ok dette tar tekst i en len funksjon som da kalkulerer alle bukstaver i en streng. I vårt tilelle er strengen «banan» og  da kalkulerer den bokstavene og gir et resultat 5. Men vi må ikke glemme «-1» som da fjerner en verdi og veriden blir til 4. 
+
+	Neste som skjer er «while i >= 0:»
+Den skjekker om i er større eller lik 0 og hvis den er lik er en bolien verdi på false om den er ulik blir det til true. 
+
+Så er det er «if tekst[i] ! = a»
+Er får vi false for a != a bliver false fordi veriden er lik
+	
+Så er det resultat = resultat = tekst[i]
+Så resultat blir da: ”bnan”
+Også tilslutt tar i = i - 2
+Jeg trur resultat er «bnn »
+	nnb
+
+feil igjene
+				
+				
+
+ 
+
+
