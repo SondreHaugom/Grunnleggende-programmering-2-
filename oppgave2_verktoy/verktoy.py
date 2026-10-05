@@ -17,6 +17,8 @@ def reverser(tekst: str) -> str:
     return resultat
 
 
+
+
 def er_primtall(n: int) -> bool:
     if n <= 1:
         return False
@@ -28,3 +30,12 @@ def er_primtall(n: int) -> bool:
             break
     return prime
 
+
+
+def sorter(tall: list[int]) -> list[int]:
+    min = tall[0]
+    for t in tall:
+        if t < min:
+            min = t
+        tall.append(min)
+        tall.remove(min)
