@@ -1,7 +1,10 @@
 from pytest import mark, raises 
 from verktoy import finn_minste_storste, reverser
+\
 
-
+"""
+"""
+# Tester for finn_minste_storste-funksjonen
 @mark.parametrize(
     "tall, minste, storste",
     [
@@ -16,18 +19,28 @@ from verktoy import finn_minste_storste, reverser
 
 
 
-#def test_finn_minste_og_storste_suksess(tall, minste, storste):
-#    """Tester at funksjonen returnerer riktig minste og største verdi."""
-#    assert finn_minste_storste(tall) == (minste, storste)
-#    print(f"Testet med {tall}, minste tall er {minste} og største tall er {storste}")
+def test_finn_minste_og_storste_suksess(tall, minste, storste):
+    assert finn_minste_storste(tall) == (minste, storste)
+    print(f"Testet med {tall}, minste tall er {minste} og største tall er {storste}")
 
 
 
-#def test_finn_minste_og_storste_tom_liste():
-#    with raises(ValueError):
-#        finn_minste_storste([])  
+def test_finn_minste_og_storste_tom_liste():
+    with raises(ValueError):
+        finn_minste_storste([])  
 
 
+
+# Tester for reverser-funksjonen
 def test_reverser():
     assert reverser("Hello") == "olleH"
+
+
+def test_reverser_tom_streng():
+    assert reverser("") == ""
+
+
+
+
+# Tester for er_primtall-funksjonen
 
