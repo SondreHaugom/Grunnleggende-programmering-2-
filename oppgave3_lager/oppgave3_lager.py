@@ -61,8 +61,19 @@ def finn_utstyr(lager, utstyrs_id = LAGER[0][0]):
     return None
 
 
-def purrestatus(dager):
+def purrestatus(dager = LAGER[0]):
     """Hvor alvorlig er det at utstyret ikke er levert inn?"""
+
+    if dager > 30:
+        return "Til inkasso"
+    elif dager > 7:
+        return "Purring"
+    elif dager > 0:
+        return "Utlånt"
+    else:
+        return "På lager"
+
+    """
     if dager > 7:
         return "purring"
     elif dager > 30:
@@ -71,7 +82,7 @@ def purrestatus(dager):
         return "utlånt"
     else:
         return "på lager"
-
+    """
 
 def fjern_tilgjengelig(lager):
     """Plukker ut det som står på lager, så bare aktive utlån blir igjen."""
