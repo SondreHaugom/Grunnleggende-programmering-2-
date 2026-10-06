@@ -32,10 +32,10 @@ LAGER = [
 
 # Dagspriser slik de kommer inn fra det gamle økonomisystemet, som tekst
 PRISLISTE = [
-    ["PC-042", "10.7"],
-    ["PRO-002", "30.0"],
-    ["MUS-100", "1.0"],
-    ["SKJ-011", "4.0"],
+    ["PC-042", 10.7],
+    ["PRO-002", 30.0],
+    ["MUS-100", 1.0],
+    ["SKJ-011", 4.0],
 ]
 
 # Utlån som totalt koster nøyaktig dette beløpet dekkes av avdelingen
@@ -53,7 +53,7 @@ def skriv_lager(lager):
             print(utstyr[0], utstyr[1], "- utlånt til", utstyr[4])
 
 
-def finn_utstyr(lager, utstyrs_id):
+def finn_utstyr(lager, utstyrs_id = LAGER[0][0]):
     """Finner utstyret med gitt id, eller None hvis det ikke finnes."""
     for utstyr in lager:
         if utstyr[0] == utstyrs_id:
@@ -81,7 +81,7 @@ def fjern_tilgjengelig(lager):
     return lager
 
 
-def dyreste(prisliste):
+def dyreste(prisliste = PRISLISTE):
     """Finner utstyret med høyest dagspris."""
     beste = prisliste[0]
     for rad in prisliste:
@@ -130,7 +130,7 @@ def main():
 
     print()
     print("--- Dyreste utstyr ---")
-    print(dyreste(PRISLISTE))
+    print(dyreste(prisliste = PRISLISTE))
 
     print()
     print("--- Fakturering ---")
@@ -146,7 +146,7 @@ def main():
 
     print()
     print("--- Oppslag ---")
-    funnet = finn_utstyr(LAGER, "PC-099")
+    funnet = finn_utstyr(LAGER, utstyrs_id = LAGER[0][0] )  
     print("Fant:", funnet[1])
 
 
