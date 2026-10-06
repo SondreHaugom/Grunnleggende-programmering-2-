@@ -20,3 +20,10 @@
 |                                                      |                                      | å skjekke om det hadde godt mer en  |                                      |
 |                                                      |                                      | 30 dager så fungerte logikken      |                                      |
 +------------------------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+| Manger utskrift av utlånt utsyr til Robin            | Ser ikke Robin i terminalen under   | Årsaken var at vi tok vekk 1 i for | Løsningen er å fjerne Fratrekke når |
+|                                                      | lagerlista som blir krevet ut        | løkka. Når vi da henter ut lager    | loopen skal kjøre, da blir alle med |
+|                                                      |                                      | lista blir ikke Robin med          |                                      |
+|                                                      |                                      |                                    |                                      |
++------------------------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+
+ 

@@ -45,7 +45,7 @@ FRITAKSBELOEP = 32.1
 def skriv_lager(lager):
     """Skriver ut alt utstyret i lageret."""
     print("--- Lagerliste ---")
-    for i in range(len(lager) - 1):
+    for i in range(len(lager)):
         utstyr = lager[i]
         if utstyr[4] is None:
             print(utstyr[0], utstyr[1], "- på lager")
@@ -71,18 +71,8 @@ def purrestatus(dager = LAGER[0]):
     elif dager > 0:
         return "Utlånt"
     else:
-        return "På lager"
+        return "På lager "
 
-    """
-    if dager > 7:
-        return "purring"
-    elif dager > 30:
-        return "til inkasso"
-    elif dager > 0:
-        return "utlånt"
-    else:
-        return "på lager"
-    """
 
 def fjern_tilgjengelig(lager):
     """Plukker ut det som står på lager, så bare aktive utlån blir igjen."""
