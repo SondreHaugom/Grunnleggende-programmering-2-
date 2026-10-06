@@ -47,3 +47,5 @@ def test_er_primtall():
     assert er_primtall(2) == True
     assert er_primtall(4) == False
 
+def test_er_primtall_negativt_tall():
+    assert er_primtall(-5) == False
