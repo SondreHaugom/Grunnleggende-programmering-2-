@@ -1,9 +1,9 @@
 from pytest import mark, raises 
-from verktoy import finn_minste_storste, reverser
+from verktoy import finn_minste_storste, reverser, er_primtall
 \
 
 """
-"""
+
 # Tester for finn_minste_storste-funksjonen
 @mark.parametrize(
     "tall, minste, storste",
@@ -39,8 +39,11 @@ def test_reverser():
 def test_reverser_tom_streng():
     assert reverser("") == ""
 
-
+"""
 
 
 # Tester for er_primtall-funksjonen
+def test_er_primtall():
+    assert er_primtall(2) == True
+    assert er_primtall(4) == False
 
