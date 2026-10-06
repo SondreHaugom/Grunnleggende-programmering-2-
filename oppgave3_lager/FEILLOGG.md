@@ -25,5 +25,17 @@
 |                                                      |                                      | lista blir ikke Robin med          |                                      |
 |                                                      |                                      |                                    |                                      |
 +------------------------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+| Feil ved utskrift av aktiverte lån. Det skal kunn    | Leste igjen priten i terminalen     | Åsaken kan være funksjonen som      | Jeg har ingen løsning på dette      |
+| bli skrevet ut de som er aktive, men TAST-100 blir   | samtidig som jeg gikk gjennom       | skriver henter datan eller idet     | enda                                 |
+| krevet ut og den er ikke utlånt til noen             | koden, da så jeg at TAST-100 som    | den blir printet ut i terminalen    |                                      |
+|                                                      | ikke er utlånt blir skrevet ut.     |                                      |                                      |
++------------------------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+| Feil med utskrift av Snitt dager utlånt              | Syntes snittet var litt lavt o      | Her er feilen i kalkuleringen og    | Har ingen løsning enda               |
+|                                                      | skjekket med å regne ut selv å fant | beregningen av snittet              |                                      |
+|                                                      | ut at utregningen blir feil i       |                                      |                                      |
+|                                                      | koden                                |                                      |                                      |
++------------------------------------------------------+--------------------------------------+--------------------------------------+--------------------------------------+
+
+ 
 
  

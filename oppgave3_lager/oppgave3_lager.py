@@ -74,11 +74,12 @@ def purrestatus(dager = LAGER[0]):
         return "På lager "
 
 
-def fjern_tilgjengelig(lager):
+def fjern_tilgjengelig(lager = LAGER):
     """Plukker ut det som står på lager, så bare aktive utlån blir igjen."""
     for utstyr in lager:
         if utstyr[4] is None:
             lager.remove(utstyr)
+            print("Fjernet:", utstyr[0])
     return lager
 
 
@@ -141,7 +142,7 @@ def main():
 
     print()
     print("--- Aktive utlån ---")
-    aktive = fjern_tilgjengelig(list(LAGER))
+    aktive = fjern_tilgjengelig()
     for utstyr in aktive:
         print(utstyr[0], "->", utstyr[4])
 
