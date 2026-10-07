@@ -50,6 +50,9 @@ tilslutt har vi tre listen der to av listene skriver ut:
 Den tredje listen, som er c, skriver ut:
 [1, 2, 3, 4, 5]
 
+
+
+
 Snutt 4
 
 | Runde | `i` | `j`     | `...`         | Utskrift |         
@@ -63,3 +66,8 @@ Snutt 5
 | Runde | `i` | `total`     | `...`         | Utskrift |
   
   
+
+
+kilder:
+https://www.w3schools.com/python/python_for_loops.asp
+https://www.youtube.com/watch?v=KWgYha0clzw

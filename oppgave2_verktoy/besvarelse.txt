@@ -16,3 +16,8 @@ den teller til den har et tall som kan deles med kvadratroten for hvis tallet ik
 2: 
 sorter tar hele lista av gangen derom lista er veldig lang vil den blir veldig treg. 
 Når det gjelder sammenligninger er det kunn 1 den ser slik ut "if t < minste:" 
+
+
+Kilder:
+https://www.youtube.com/watch?v=TZ0E3asLiGE
+https://www.matematikk.org/oss.html?tid=88857
