@@ -1,3 +1,12 @@
+def meny():
+    print("Velkommen til banken din!")
+    print("1. Se alle kontoer")
+    print("2. Sett inn")
+    print("3. Ta ut")
+
+
+
+
 class Konto:
     def __init__(self, eier, saldo=0,):
         self.eier = eier
@@ -9,7 +18,7 @@ class Konto:
             print(f"Du kan ikke sette inn et negativt beløp. {belop} kr er ikke gyldig.")
         else:
             self.saldo += belop
-            print(f"{belop} kr er satt inn. Ny saldo: {self.saldo} kr")
+            print(f"{belop} kr er satt inn. Ny saldo: {self.saldo} kr for {self.eier}")
 
 
     
@@ -63,8 +72,22 @@ def finn_konto(kontoer_liste, eier):
         if konto.eier == eier:
             print(konto.eier)
     return None
-finn_konto(kontoer_liste, eier="Per")
-
-#total_saldo(kontoer_liste)
 
 
+
+def main():
+    meny()
+
+    while True:
+        valg = input("Velg et alternativ (1-3) eller 'q' for å avslutte:")
+
+        if valg == 'q':
+            print("Takk for idag")
+            break
+
+        elif valg == '1':
+            print(f"alle kontorer til nå er: {kontoer_liste}")
+            if not kontoer_liste:
+                print("Lista er tom") 
+
+main()
