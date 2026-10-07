@@ -1,0 +1,11 @@
+Besvalerlse 
+
+self parametere brukes til å få tilgang til egenskaper og metodene som klassen tilhører. 
+Grunnen til at dette er viktig er at, uten self hvil ikke python vite hvilke objektegenskap di vil ha tilng til.
+
+
+
+
+kilder:
+https://www.w3schools.com/python/python_class_init.asp
+https://www.w3schools.com/python/python_class_self.asp
