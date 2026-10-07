@@ -25,10 +25,12 @@ class Konto:
     def __str__(self):
         return f"{self.eier}: {self.saldo} kr"
 
-ola = Konto("Ola") # Ola`s saldo endrer seg ikke for saldo blir aldri kalt og har ingen verdi som enderer den
+
+
+ola = Konto("Ola") # Ola`s saldo endrer seg ikke for saldo får ikke en verdi som blir endret.
 kari = Konto("Kari", 500)
 kari.ta_ut(300)
-kari.ta_ut(100)
+kari.ta_ut(1000)
 kari.sett_inn(-50)
 print(kari)
 

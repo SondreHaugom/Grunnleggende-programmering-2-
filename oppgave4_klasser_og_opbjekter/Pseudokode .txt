@@ -15,4 +15,7 @@ Målet er å sørge for at man kan kan ta ut eller in negative beløp.
 
 
 Del 3 
+Legg in koden ifra oppgave teksten og legg så til metoden legg_til_renter(self)
+i metoden skal logiken for å regne ut renten ligge. 
 
+formel for å regne ut renter på er: beløp × Rentesats = Årlig rente
