@@ -32,7 +32,9 @@ class Sparekonto(Konto):
 
 
     def legg_til_renter(self):
-        
+        rente = self.saldo * self.rentesats / 100
+        self.saldo += rente
+        print(f"Renter på {self.rentesats}% er lagt til. Ny saldo: {self.saldo} kr")
         
 
 
