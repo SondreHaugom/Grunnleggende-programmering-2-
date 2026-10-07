@@ -45,27 +45,26 @@ konto3 = Konto("Per", 300)
 konto4 = Sparekonto("Pål", 800, 3.0)
 
 
-kontoer = [konto1, konto2, konto3, konto4]
+kontoer_liste = [konto1, konto2, konto3, konto4]
 #print(kontoer)
 
 
 
-def total_saldo(kontoer):
+def total_saldo(kontoer_liste):
     total = 0
-    for konto in kontoer:
+    for konto in kontoer_liste:
         total += konto.saldo
 
     print(f"totale summen for alle konter er: {total}")
 
 
-def finn_konto(kontoer, eier):
-    for konto in kontoer:
-        if konto == eier:
-            print(eier)
-            return "her er din konto", konto
-        else:
-            None
+def finn_konto(kontoer_liste, eier):
+    for konto in kontoer_liste:
+        if konto.eier == eier:
+            print(konto.eier)
+    return None
+finn_konto(kontoer_liste, eier="Per")
 
-finn_konto(kontoer, eier="Per")
+#total_saldo(kontoer_liste)
 
-# total_saldo(kontoer)
+
