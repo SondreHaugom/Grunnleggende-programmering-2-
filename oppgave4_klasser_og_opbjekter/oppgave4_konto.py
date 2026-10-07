@@ -11,7 +11,15 @@ class Konto:
             self.saldo += belop
             print(f"{belop} kr er satt inn. Ny saldo: {self.saldo} kr")
 
-        
+
+    
+    def ta_ut(self, belop=0):
+        if belop > self.saldo:
+            print("Du kan ikke ta ut mer enn det du har på kontoen.")
+        else:
+            self.saldo -= belop
+            print(f"{belop} kr er tatt ut. Ny saldo: {self.saldo} kr")
+
     def __str__(self):
         return f"{self.eier}: {self.saldo} kr"
 
