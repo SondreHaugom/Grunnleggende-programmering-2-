@@ -3,3 +3,16 @@ Pseudokode for oppgave 4. Oppgave 4 blir delt inn i 4 deler og skal lage Pseudok
 
 Del 1  Klassen og to objekter
 
+Her setter jeg inn koden ifra oppgaveteksten og svarer på sprøsmål rudnt koden
+
+
+del 2 Metoder som vokter saldoen
+
+legg til to nye objekter. 
+Begge objektene skal beskytte saldoen.
+
+Målet er å sørge for at man kan kan ta ut eller in negative beløp. 
+
+
+Del 3 
+
