@@ -53,5 +53,19 @@ kontoer = [konto1, konto2, konto3, konto4]
 def total_saldo(kontoer):
     total = 0
     for konto in kontoer:
-        print(konto)
-total_saldo(kontoer)
+        total += konto.saldo
+
+    print(f"totale summen for alle konter er: {total}")
+
+
+def finn_konto(kontoer, eier):
+    for konto in kontoer:
+        if konto == eier:
+            print(eier)
+            return "her er din konto", konto
+        else:
+            None
+
+finn_konto(kontoer, eier="Per")
+
+# total_saldo(kontoer)
