@@ -39,18 +39,19 @@ class Sparekonto(Konto):
 
 
 
-ola = Konto("Ola") # Ola`s saldo endrer seg ikke for saldo får ikke en verdi som blir endret.
-kari = Konto("Kari", 500)
-kari.ta_ut(300)
-kari.ta_ut(1000)
-kari.sett_inn(-50)
-print(kari)
+konto1 = Konto("Ola", 1000) # Ola`s saldo endrer seg ikke for saldo får ikke en verdi som blir endret.
+konto2 = Sparekonto("Kari", 500, 3.0)
+konto3 = Konto("Per", 300)
+konto4 = Sparekonto("Pål", 800, 3.0)
+
+
+kontoer = [konto1, konto2, konto3, konto4]
+#print(kontoer)
 
 
 
-sparing = Sparekonto("Kari", 1000, 3.0)
-sparing.sett_inn(500)
-sparing.legg_til_renter()
-print(sparing)
-
-
+def total_saldo(kontoer):
+    total = 0
+    for konto in kontoer:
+        print(konto)
+total_saldo(kontoer)
