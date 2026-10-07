@@ -25,8 +25,18 @@ class Konto:
     def __str__(self):
         return f"{self.eier}: {self.saldo} kr"
 
+class Sparekonto(Konto):
+    def __init__(self, eier, saldo=0, rentesats=2.5):
+        super().__init__(eier, saldo)
+        self.rentesats = rentesats
 
 
+    def legg_til_renter(self):
+        
+        
+
+
+"""
 ola = Konto("Ola") # Ola`s saldo endrer seg ikke for saldo får ikke en verdi som blir endret.
 kari = Konto("Kari", 500)
 kari.ta_ut(300)
@@ -34,5 +44,11 @@ kari.ta_ut(1000)
 kari.sett_inn(-50)
 print(kari)
 
+"""
+
+sparing = Sparekonto("Kari", 1000, 3.0)
+sparing.sett_inn(500)
+sparing.legg_til_renter()
+print(sparing)
 
 
