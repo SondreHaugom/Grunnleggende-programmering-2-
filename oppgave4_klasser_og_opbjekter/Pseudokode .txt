@@ -30,3 +30,15 @@ funksjon 1:
 
 funksjon 2: 
     finn_konto, returnerer kontoen til en gitt eier, eller None
+
+
+
+
+del 5
+ enkel meny 
+
+ Menyen skla ha 4 valg:
+ 1. hvis alle kontoer
+ 2. sett inn
+ 3. ta ut
+ 4. avslutt 
