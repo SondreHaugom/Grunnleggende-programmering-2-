@@ -19,3 +19,14 @@ Legg in koden ifra oppgave teksten og legg så til metoden legg_til_renter(self)
 i metoden skal logiken for å regne ut renten ligge. 
 
 formel for å regne ut renter på er: beløp × Rentesats = Årlig rente
+
+
+
+Del 4
+legg til flere kontorer og sparekontoer i en liste og skriv to funksjoner som jobber på lista. 
+
+funksjon 1:
+    total_saldo, den skal summere saldoen på alle kontoene
+
+funksjon 2: 
+    finn_konto, returnerer kontoen til en gitt eier, eller None

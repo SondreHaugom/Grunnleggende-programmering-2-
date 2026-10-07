@@ -38,7 +38,7 @@ class Sparekonto(Konto):
         
 
 
-"""
+
 ola = Konto("Ola") # Ola`s saldo endrer seg ikke for saldo får ikke en verdi som blir endret.
 kari = Konto("Kari", 500)
 kari.ta_ut(300)
@@ -46,7 +46,7 @@ kari.ta_ut(1000)
 kari.sett_inn(-50)
 print(kari)
 
-"""
+
 
 sparing = Sparekonto("Kari", 1000, 3.0)
 sparing.sett_inn(500)
