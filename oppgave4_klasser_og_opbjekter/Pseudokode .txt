@@ -1,0 +1,5 @@
+Pseudokode for oppgave 4. Oppgave 4 blir delt inn i 4 deler og skal lage Pseudokode for hver eneklt del
+
+
+Del 1  Klassen og to objekter
+
